@@ -12,7 +12,7 @@ export function ExchangeRate() {
   return (
     <>
       <section>
-        <h1 className="ExchangeRate-header">Exchange Rates </h1>
+        <h1 className="ExchangeRate-header">Exchange Rates</h1>
       </section>
       <section>
         <AmountField amount={amount} />

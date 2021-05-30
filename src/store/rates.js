@@ -14,8 +14,7 @@ export function ratesReducer(state = initialState, action) {
     case CURRENCY_CODE_CHANGED:
       return { ...state, currencyCode: action.payload };
     case "rates/ratesReceived": {
-      const codes = Object.keys(action.payload);
-      // .concat(state.currencyCode);
+      const codes = Object.keys(action.payload).concat(state.currencyCode);
       return {
         ...state,
         currencyData: action.payload,
